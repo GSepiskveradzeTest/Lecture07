@@ -138,7 +138,7 @@ namespace WebApplication2.Controllers
         {
             var data = await _context.Set<PostEntity>()
                 .Include(x => x.Comments)
-                .ToListAsync();
+                .ToListAsync(); 
 
             var parsedData = JsonConvert.SerializeObject(data);
 
