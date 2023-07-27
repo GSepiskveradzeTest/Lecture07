@@ -133,7 +133,7 @@ namespace WebApplication2.Controllers
 
             await _context.SaveChangesAsync();
         }
-        [HttpGet("GetPost")]
+        [HttpGet("GetPost")] // Comment
         public async Task<IActionResult> GetPost()
         {
             var data = await _context.Set<PostEntity>()
